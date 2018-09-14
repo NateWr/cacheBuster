@@ -15,7 +15,7 @@ class CacheBusterPlugin extends GenericPlugin {
 	/**
 	 * @copydoc Plugin::register
 	 */
-	public function register($category, $path) {
+	public function register($category, $path, $mainContextId = NULL) {
 		$success = parent::register($category, $path);
 		if ($success && $this->getEnabled()) {
 			$templateMgr = TemplateManager::getManager(Application::getRequest());
