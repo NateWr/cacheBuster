@@ -18,7 +18,7 @@ class CacheBusterPlugin extends GenericPlugin {
 	public function register($category, $path, $mainContextId = NULL) {
 		$success = parent::register($category, $path);
 		if ($success && $this->getEnabled()) {
-			$templateMgr = TemplateManager::getManager(Application::getRequest());
+			$templateMgr = TemplateManager::getManager(Application::get()->getRequest());
 			$templateMgr->clearTemplateCache();
 			$templateMgr->clearCssCache();
 		}
