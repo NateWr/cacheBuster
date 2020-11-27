@@ -1,0 +1,18 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-11-27T14:59:47+00:00\n"
+"PO-Revision-Date: 2020-11-27T14:59:47+00:00\n"
+"Language: \n"
+
+msgid "plugins.generic.cacheBuster.name"
+msgstr "Cache Buster"
+
+msgid "plugins.generic.cacheBuster.description"
+msgstr "A development tool to clear the CSS and template cache on every page load. Do not run on a live site."
