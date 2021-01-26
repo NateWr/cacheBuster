@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  -->
+
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.generic.cacheBuster.name">Cache Buster</message>
+	<message key="plugins.generic.cacheBuster.description">Una herramienta de desarrollo que limpia la cache de CSS y plantillas cada vez que se carga una página. No usar en sitios en vivo o en producción.</message>
+</locale>
