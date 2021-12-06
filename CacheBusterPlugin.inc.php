@@ -2,8 +2,8 @@
 /**
  * @file plugins/generic/cacheBuster/CacheBusterPlugin.inc.php
  *
- * Copyright (c) 2014-2017 Simon Fraser University
- * Copyright (c) 2003-2017 John Willinsky
+ * Copyright (c) 2014-2021 Simon Fraser University
+ * Copyright (c) 2003-2021 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class CacheBusterPlugin
@@ -11,6 +11,11 @@
  *
  * @brief Clear the CSS and Template cache on every page load.
  */
+
+use APP\core\Application;
+use PKP\cache\CacheManager;
+use PKP\plugins\GenericPlugin;
+
 class CacheBusterPlugin extends GenericPlugin {
 	/**
 	 * @copydoc Plugin::register
@@ -21,6 +26,9 @@ class CacheBusterPlugin extends GenericPlugin {
 			$templateMgr = TemplateManager::getManager(Application::get()->getRequest());
 			$templateMgr->clearTemplateCache();
 			$templateMgr->clearCssCache();
+
+			$cacheMgr = CacheManager::getManager();
+			$cacheMgr->flush();
 		}
 		return $success;
 	}
