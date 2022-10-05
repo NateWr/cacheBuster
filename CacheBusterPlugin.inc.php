@@ -12,9 +12,7 @@
  * @brief Clear the CSS and Template cache on every page load.
  */
 
-use APP\core\Application;
-use PKP\cache\CacheManager;
-use PKP\plugins\GenericPlugin;
+import('lib.pkp.classes.plugins.GenericPlugin');
 
 class CacheBusterPlugin extends GenericPlugin {
 	/**
