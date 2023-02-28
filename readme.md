@@ -1,6 +1,6 @@
 # Cache Buster
 
-:warning: **This is a development tool and should not be used on a live site.**
+> :warning: **This is a development tool and should not be used on a live site.**
 
 A plugin for [OJS, OMP and OPS](https://pkp.sfu.ca/software/) that will clear the CSS and template cache with every page load. This can be used to disable the cache when developing a theme or plugin, so that you can see your changes immediately.
 
