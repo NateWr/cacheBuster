@@ -13,6 +13,7 @@
  */
 
 use APP\core\Application;
+use APP\template\TemplateManager;
 use PKP\cache\CacheManager;
 use PKP\plugins\GenericPlugin;
 
