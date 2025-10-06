@@ -15,8 +15,7 @@
  * @brief Wrapper for the Cache Buster plugin.
  *
  */
-require_once('CacheBusterPlugin.inc.php');
+return new \APP\plugins\generic\cacheBuster\CacheBusterPlugin();
 
-return new CacheBusterPlugin();
-
+error_log('hello there')
 ?>

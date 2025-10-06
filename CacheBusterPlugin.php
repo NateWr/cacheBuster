@@ -11,10 +11,11 @@
  *
  * @brief Clear the CSS and Template cache on every page load.
  */
+namespace APP\plugins\generic\cacheBuster;
 
 use APP\core\Application;
 use APP\template\TemplateManager;
-use PKP\cache\CacheManager;
+use PKP\core\PKPContainer;
 use PKP\plugins\GenericPlugin;
 
 class CacheBusterPlugin extends GenericPlugin {
@@ -28,8 +29,8 @@ class CacheBusterPlugin extends GenericPlugin {
 			$templateMgr->clearTemplateCache();
 			$templateMgr->clearCssCache();
 
-			$cacheMgr = CacheManager::getManager();
-			$cacheMgr->flush();
+			$cacheManager = PKPContainer::getInstance()['cache'];
+			$cacheManager->store()->flush();
 		}
 		return $success;
 	}
