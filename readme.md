@@ -9,7 +9,8 @@ Use the correct branch for your version of OJS, OMP and OPS.
 | Software Version | Branch |
 | --- | --- |
 | Latest development | `main` |
-| 3.4 | `main` (2023-02-28) |
+| 3.5 | `main` (2025-10-06) |
+| 3.4 | `stable-3_4_0` |
 | 3.3.x | `stable-3_3_0` |
 | 3.2.1.x | `stable-3_2_1` |
 | 3.1.2.x | `stable-3_1_2` |
