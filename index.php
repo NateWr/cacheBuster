@@ -16,6 +16,4 @@
  *
  */
 return new \APP\plugins\generic\cacheBuster\CacheBusterPlugin();
-
-error_log('hello there')
 ?>
